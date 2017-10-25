@@ -1,0 +1,16 @@
+<h1>Cats#show</h1>
+
+<h2>Name</h2>
+  <h3> <%= @cat.name %> </h3>
+
+
+<h2>Color</h2>
+  <h3> <%= @cat.color %> </h3>
+
+<h2>Description</h2>
+  <h3> <%= @cat.description %> </h3>
+<ol>
+  <% @rentals.each do |rental| %>
+    <li>start_date: "<%= rental.start_date%>", end_date: "<%= rental.end_date%>" </li>
+  <% end %>
+</ol>
